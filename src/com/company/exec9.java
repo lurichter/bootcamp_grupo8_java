@@ -20,23 +20,17 @@ public class exec9 {
     static ArrayList<String> L9 = new ArrayList<>();
 
     static ArrayList<String> listaFinal = new ArrayList<>();
-
+    
     static int maiorCaractere = maiorCaracteres(iArr);
 
-
+    
     public static void main(String[] args) {
-
-
-
         radixSort();
-
-
     }
 
     public static int maiorCaracteres(int iArr[]) {
         int maior = 0;
 
-        // converter p/ string
         for ( int i = 0; i < iArr.length; i++ ) {
 
             String element = String.valueOf(iArr[i]);
@@ -50,8 +44,9 @@ public class exec9 {
     public static void radixSort() {
 
         igualaArrays(iArr);
+        
+        listaFinal.addAll(Arrays.asList(arrString));
 
-        int digitoAtual = maiorCaractere;
         int digitoIteracao = maiorCaractere;
 
         while ( digitoIteracao > 0 ) {
@@ -63,18 +58,20 @@ public class exec9 {
     }
 
     public static void radixIteracao (int digitoIteracao) {
-        limpaLista();
+    	ArrayList<String> array = new ArrayList<String>();
+    	array.addAll(listaFinal);
+    	
+        limpaListas();
 
-        for (int i = 0; i < arrString.length; i++ ) {
-            String num = arrString[i];
-
+        for (String num : array) {
             atribuiLista(num, pegaElementoChave(num, digitoIteracao));
         }
         listaResultante();
 
     }
 
-    public static void limpaLista() {
+    public static void limpaListas() {
+    	L0.clear();
         L1.clear();
         L2.clear();
         L3.clear();
@@ -84,6 +81,7 @@ public class exec9 {
         L7.clear();
         L8.clear();
         L9.clear();
+        listaFinal.clear();
     }
 
     public static String[] igualaArrays(int iArr[]) {
@@ -132,6 +130,5 @@ public class exec9 {
         listaFinal.addAll(L8);
         listaFinal.addAll(L9);
     }
-
 
 }
