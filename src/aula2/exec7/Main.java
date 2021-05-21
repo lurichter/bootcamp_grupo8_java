@@ -1,4 +1,4 @@
-package aula2.exec6;
+package aula2.exec7;
 
 public class Main {
     public static void main(String[] args) {

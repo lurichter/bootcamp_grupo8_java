@@ -1,4 +1,4 @@
-package aula2.exec6;
+package aula2.exec7;
 
 public class StringUtil {
     public static String rpad(String s, String c, int n ) {
