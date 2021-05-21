@@ -1,4 +1,4 @@
-package com.company;
+package aula1;
 
 public class exec7 {
     public static void main(String[] args) {
