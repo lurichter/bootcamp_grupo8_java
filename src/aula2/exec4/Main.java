@@ -2,11 +2,13 @@ package aula2.exec4;
 
 public class Main {
     public static void main(String[] args) {
-        Book book = new Book("Harry Potter e o Cálice de Fogo",12345, "J.K.Rolling");
-        System.out.println(book);
-        book.emprestimo();
-        System.out.println(book);
-        book.devolver();
-        System.out.println(book);
+
+        Fracao f = new Fracao(2, 3);
+
+        f.somar(8, 3);
+        f.subtrair(8, 3);
+        f.multiplicar(8, 3);
+        f.dividir(5, 6);
+
     }
 }
