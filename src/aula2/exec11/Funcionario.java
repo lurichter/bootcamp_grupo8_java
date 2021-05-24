@@ -1,13 +1,20 @@
 package aula2.exec11;
 
-public abstract class Funcionario {
+public abstract class Funcionario implements Assalariado{
 
     private double salario;
     private double hora;
+    private boolean metaBatida;
 
     public Funcionario(double salario, double hora) {
         this.salario = salario;
         this.hora = hora;
+    }
+
+    public abstract double pagarSalario();
+    
+    public void setMetaBatida(boolean metaBatida) {
+    	this.metaBatida = metaBatida;
     }
 
     public double getHora() {
@@ -26,5 +33,9 @@ public abstract class Funcionario {
         this.salario = salario;
     }
 
-    public abstract double pagarSalario();
+
+	public boolean isMetaBatida() {
+		return metaBatida;
+	}
+
 }

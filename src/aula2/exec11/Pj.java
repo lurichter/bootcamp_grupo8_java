@@ -2,12 +2,13 @@ package aula2.exec11;
 
 public class Pj extends Funcionario {
 
-    public Pj(double salario, double hora) {
+    Pj(double salario, double hora) {
         super(salario, hora);
     }
 
-    @Override
-    public double pagarSalario() {
-        return 0;
-    }
+	@Override
+	public double pagarSalario() {
+		return getSalario() * getHora();
+	}
+
 }
